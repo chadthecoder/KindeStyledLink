@@ -22,7 +22,7 @@ export default function CustomButton({btnType, href, text, child}: CBProps) {
     }
     else if(btnType == "SignUp" && child)
     {
-        return (<RegisterLink postLoginRedirectURL="/welcome" className={btnStyle}>Sign Up {child}</RegisterLink>);
+        return (<RegisterLink className={btnStyle}>Sign Up {child}</RegisterLink>);
     }
     else if(btnType == "SignOut")
     {
